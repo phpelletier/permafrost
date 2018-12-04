@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 
-def plot_seis(data, dt, clip=0.1, aspect=3):
+def plot_seis(data, dt, clip=0.04, aspect=3):
     fig, ax = plt.subplots(1, 1, figsize=[16, 16/aspect])
     vmax = clip * np.max(data)
     vmin = -vmax
